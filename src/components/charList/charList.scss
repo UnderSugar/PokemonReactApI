@@ -1,0 +1,85 @@
+@import '../../style/variables.scss';
+
+.char {
+    &__content {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 650px 425px;
+        column-gap: 25px;
+        align-items: start;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        column-gap: 25px;
+        row-gap: 30px;
+    }
+    &__item {
+        border-radius: 15px;
+        width: 200px;
+        height: 318px;
+        background-color: white;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, .25);
+        padding: 15px;
+        cursor: pointer;
+        transition: 0.3s transform;
+        img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            transform: translate(-15px, -15px);
+        }
+        &_selected {
+            box-shadow: 0 5px 20px $main-color;
+            transform: translateY(-8px);
+        }
+        .abilities{
+            height: 30px;
+            padding-top: 5px;
+            text-align: center;
+            border: 1px solid white;
+            border-radius: 5px;
+            width: 75px;
+        }
+        h2{
+            text-align: center;
+        }
+    }
+    &__name {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+.grass {
+    background-color: rgb(208, 208, 121);
+}
+.poison {
+    background-color: purple;
+}
+.fire {
+    background-color: red;
+}
+.flying {
+    background-color: rgb(165, 210, 225);
+}
+.water{
+    background-color: rgb(26, 204, 227)
+}
+.bug{
+    background-color: rgb(122, 51, 51);
+}
+.normal{
+    background-color: rgb(152, 240, 161)
+}
+.ground{
+    background-color: rgb(116, 94, 33);
+}
+.electric{
+    background-color: rgb(237, 233, 11)
+}
+.fairy{
+    background-color: rgb(236, 26, 173);
+}
